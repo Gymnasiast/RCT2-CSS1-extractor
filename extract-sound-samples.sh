@@ -65,6 +65,7 @@ dd if=samples.dat of=cry2.sample ibs=1 skip=5273440 count=78908
 dd if=samples.dat of=tram.sample ibs=1 skip=5352348 count=41632
 dd if=samples.dat of=door1.sample ibs=1 skip=5393980 count=12564
 dd if=samples.dat of=door2.sample ibs=1 skip=5406544 count=12564
+dd if=samples.dat of=door3.sample ibs=1 skip=5419108
 
 # Separate the sample metadata from the raw PCM data
 dd if=lift1.sample of=lift1.pcm ibs=16 skip=1
@@ -129,6 +130,7 @@ dd if=cry2.sample of=cry2.pcm ibs=16 skip=1
 dd if=tram.sample of=tram.pcm ibs=16 skip=1
 dd if=door1.sample of=door1.pcm ibs=16 skip=1
 dd if=door2.sample of=door2.pcm ibs=16 skip=1
+dd if=door3.sample of=door3.pcm ibs=16 skip=1
 
 # Convert the raw pcm data to wav files
 gst-launch filesrc location=lift1.pcm ! audio/x-raw-int, rate=22050, channels=1, endianness=1234, width=16, depth=16, signed=true ! audioconvert ! audio/x-raw-int, rate=22050, channels=1, endianness=1234, width=16, depth=16, signed=true ! wavenc ! filesink location=lift1.wav
@@ -195,6 +197,7 @@ gst-launch filesrc location=cry2.pcm ! audio/x-raw-int, rate=22050, channels=1, 
 gst-launch filesrc location=tram.pcm ! audio/x-raw-int, rate=22050, channels=1, endianness=1234, width=16, depth=16, signed=true ! audioconvert ! audio/x-raw-int, rate=22050, channels=1, endianness=1234, width=16, depth=16, signed=true ! wavenc ! filesink location=tram.wav
 gst-launch filesrc location=door1.pcm ! audio/x-raw-int, rate=22050, channels=1, endianness=1234, width=16, depth=16, signed=true ! audioconvert ! audio/x-raw-int, rate=22050, channels=1, endianness=1234, width=16, depth=16, signed=true ! wavenc ! filesink location=door1.wav
 gst-launch filesrc location=door2.pcm ! audio/x-raw-int, rate=22050, channels=1, endianness=1234, width=16, depth=16, signed=true ! audioconvert ! audio/x-raw-int, rate=22050, channels=1, endianness=1234, width=16, depth=16, signed=true ! wavenc ! filesink location=door2.wav
+gst-launch filesrc location=door3.pcm ! audio/x-raw-int, rate=22050, channels=1, endianness=1234, width=16, depth=16, signed=true ! audioconvert ! audio/x-raw-int, rate=22050, channels=1, endianness=1234, width=16, depth=16, signed=true ! wavenc ! filesink location=door3.wav
 
 # Remove temporary files
 rm samples.dat
@@ -260,5 +263,6 @@ rm cry2.sample cry2.pcm
 rm tram.sample tram.pcm
 rm door1.sample door1.pcm
 rm door2.sample door2.pcm
+rm door3.sample door3.pcm
 
 exit 0
