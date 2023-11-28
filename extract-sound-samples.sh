@@ -133,71 +133,71 @@ dd if=door2.sample of=door2.pcm ibs=16 skip=1
 dd if=door3.sample of=door3.pcm ibs=16 skip=1
 
 # Convert the raw pcm data to wav files
-gst-launch filesrc location=lift1.pcm ! audio/x-raw-int, rate=22050, channels=1, endianness=1234, width=16, depth=16, signed=true ! audioconvert ! audio/x-raw-int, rate=22050, channels=1, endianness=1234, width=16, depth=16, signed=true ! wavenc ! filesink location=lift1.wav
-gst-launch filesrc location=straight-running.pcm ! audio/x-raw-int, rate=22050, channels=1, endianness=1234, width=16, depth=16, signed=true ! audioconvert ! audio/x-raw-int, rate=22050, channels=1, endianness=1234, width=16, depth=16, signed=true ! wavenc ! filesink location=straight-running.wav
-gst-launch filesrc location=running-fast.pcm ! audio/x-raw-int, rate=22050, channels=1, endianness=1234, width=16, depth=16, signed=true ! audioconvert ! audio/x-raw-int, rate=22050, channels=1, endianness=1234, width=16, depth=16, signed=true ! wavenc ! filesink location=running-fast.wav
-gst-launch filesrc location=scream1.pcm ! audio/x-raw-int, rate=22050, channels=1, endianness=1234, width=16, depth=16, signed=true ! audioconvert ! audio/x-raw-int, rate=22050, channels=1, endianness=1234, width=16, depth=16, signed=true ! wavenc ! filesink location=scream1.wav
-gst-launch filesrc location=click1.pcm ! audio/x-raw-int, rate=22050, channels=1, endianness=1234, width=16, depth=16, signed=true ! audioconvert ! audio/x-raw-int, rate=22050, channels=1, endianness=1234, width=16, depth=16, signed=true ! wavenc ! filesink location=click1.wav
-gst-launch filesrc location=click2.pcm ! audio/x-raw-int, rate=22050, channels=1, endianness=1234, width=16, depth=16, signed=true ! audioconvert ! audio/x-raw-int, rate=22050, channels=1, endianness=1234, width=16, depth=16, signed=true ! wavenc ! filesink location=click2.wav
-gst-launch filesrc location=place-item.pcm ! audio/x-raw-int, rate=22050, channels=1, endianness=1234, width=16, depth=16, signed=true ! audioconvert ! audio/x-raw-int, rate=22050, channels=1, endianness=1234, width=16, depth=16, signed=true ! wavenc ! filesink location=place-item.wav
-gst-launch filesrc location=scream2.pcm ! audio/x-raw-int, rate=22050, channels=1, endianness=1234, width=16, depth=16, signed=true ! audioconvert ! audio/x-raw-int, rate=22050, channels=1, endianness=1234, width=16, depth=16, signed=true ! wavenc ! filesink location=scream2.wav
-gst-launch filesrc location=scream3.pcm ! audio/x-raw-int, rate=22050, channels=1, endianness=1234, width=16, depth=16, signed=true ! audioconvert ! audio/x-raw-int, rate=22050, channels=1, endianness=1234, width=16, depth=16, signed=true ! wavenc ! filesink location=scream3.wav
-gst-launch filesrc location=scream4.pcm ! audio/x-raw-int, rate=22050, channels=1, endianness=1234, width=16, depth=16, signed=true ! audioconvert ! audio/x-raw-int, rate=22050, channels=1, endianness=1234, width=16, depth=16, signed=true ! wavenc ! filesink location=scream4.wav
-gst-launch filesrc location=scream5.pcm ! audio/x-raw-int, rate=22050, channels=1, endianness=1234, width=16, depth=16, signed=true ! audioconvert ! audio/x-raw-int, rate=22050, channels=1, endianness=1234, width=16, depth=16, signed=true ! wavenc ! filesink location=scream5.wav
-gst-launch filesrc location=scream6.pcm ! audio/x-raw-int, rate=22050, channels=1, endianness=1234, width=16, depth=16, signed=true ! audioconvert ! audio/x-raw-int, rate=22050, channels=1, endianness=1234, width=16, depth=16, signed=true ! wavenc ! filesink location=scream6.wav
-gst-launch filesrc location=lift2.pcm ! audio/x-raw-int, rate=22050, channels=1, endianness=1234, width=16, depth=16, signed=true ! audioconvert ! audio/x-raw-int, rate=22050, channels=1, endianness=1234, width=16, depth=16, signed=true ! wavenc ! filesink location=lift2.wav
-gst-launch filesrc location=kaching.pcm ! audio/x-raw-int, rate=22050, channels=1, endianness=1234, width=16, depth=16, signed=true ! audioconvert ! audio/x-raw-int, rate=22050, channels=1, endianness=1234, width=16, depth=16, signed=true ! wavenc ! filesink location=kaching.wav
-gst-launch filesrc location=crash.pcm ! audio/x-raw-int, rate=22050, channels=1, endianness=1234, width=16, depth=16, signed=true ! audioconvert ! audio/x-raw-int, rate=22050, channels=1, endianness=1234, width=16, depth=16, signed=true ! wavenc ! filesink location=crash.wav
-gst-launch filesrc location=water1.pcm ! audio/x-raw-int, rate=22050, channels=1, endianness=1234, width=16, depth=16, signed=true ! audioconvert ! audio/x-raw-int, rate=22050, channels=1, endianness=1234, width=16, depth=16, signed=true ! wavenc ! filesink location=water1.wav
-gst-launch filesrc location=water2.pcm ! audio/x-raw-int, rate=22050, channels=1, endianness=1234, width=16, depth=16, signed=true ! audioconvert ! audio/x-raw-int, rate=22050, channels=1, endianness=1234, width=16, depth=16, signed=true ! wavenc ! filesink location=water2.wav
-gst-launch filesrc location=water3.pcm ! audio/x-raw-int, rate=22050, channels=1, endianness=1234, width=16, depth=16, signed=true ! audioconvert ! audio/x-raw-int, rate=22050, channels=1, endianness=1234, width=16, depth=16, signed=true ! wavenc ! filesink location=water3.wav
-gst-launch filesrc location=steam-train-whistle.pcm ! audio/x-raw-int, rate=22050, channels=1, endianness=1234, width=16, depth=16, signed=true ! audioconvert ! audio/x-raw-int, rate=22050, channels=1, endianness=1234, width=16, depth=16, signed=true ! wavenc ! filesink location=steam-train-whistle.wav
-gst-launch filesrc location=steam-train-departing.pcm ! audio/x-raw-int, rate=22050, channels=1, endianness=1234, width=16, depth=16, signed=true ! audioconvert ! audio/x-raw-int, rate=22050, channels=1, endianness=1234, width=16, depth=16, signed=true ! wavenc ! filesink location=steam-train-departing.wav
-gst-launch filesrc location=splash.pcm ! audio/x-raw-int, rate=22050, channels=1, endianness=1234, width=16, depth=16, signed=true ! audioconvert ! audio/x-raw-int, rate=22050, channels=1, endianness=1234, width=16, depth=16, signed=true ! wavenc ! filesink location=splash.wav
-gst-launch filesrc location=go-kart-engine.pcm ! audio/x-raw-int, rate=22050, channels=1, endianness=1234, width=16, depth=16, signed=true ! audioconvert ! audio/x-raw-int, rate=22050, channels=1, endianness=1234, width=16, depth=16, signed=true ! wavenc ! filesink location=go-kart-engine.wav
-gst-launch filesrc location=launch1.pcm ! audio/x-raw-int, rate=22050, channels=1, endianness=1234, width=16, depth=16, signed=true ! audioconvert ! audio/x-raw-int, rate=22050, channels=1, endianness=1234, width=16, depth=16, signed=true ! wavenc ! filesink location=launch1.wav
-gst-launch filesrc location=launch2.pcm ! audio/x-raw-int, rate=22050, channels=1, endianness=1234, width=16, depth=16, signed=true ! audioconvert ! audio/x-raw-int, rate=22050, channels=1, endianness=1234, width=16, depth=16, signed=true ! wavenc ! filesink location=launch2.wav
-gst-launch filesrc location=cough1.pcm ! audio/x-raw-int, rate=22050, channels=1, endianness=1234, width=16, depth=16, signed=true ! audioconvert ! audio/x-raw-int, rate=22050, channels=1, endianness=1234, width=16, depth=16, signed=true ! wavenc ! filesink location=cough1.wav
-gst-launch filesrc location=cough2.pcm ! audio/x-raw-int, rate=22050, channels=1, endianness=1234, width=16, depth=16, signed=true ! audioconvert ! audio/x-raw-int, rate=22050, channels=1, endianness=1234, width=16, depth=16, signed=true ! wavenc ! filesink location=cough2.wav
-gst-launch filesrc location=cough3.pcm ! audio/x-raw-int, rate=22050, channels=1, endianness=1234, width=16, depth=16, signed=true ! audioconvert ! audio/x-raw-int, rate=22050, channels=1, endianness=1234, width=16, depth=16, signed=true ! wavenc ! filesink location=cough3.wav
-gst-launch filesrc location=cough4.pcm ! audio/x-raw-int, rate=22050, channels=1, endianness=1234, width=16, depth=16, signed=true ! audioconvert ! audio/x-raw-int, rate=22050, channels=1, endianness=1234, width=16, depth=16, signed=true ! wavenc ! filesink location=cough4.wav
+ffmpeg -f s16le -ar 22050 -ac 1 -i lift1.pcm lift1.wav
+ffmpeg -f s16le -ar 22050 -ac 1 -i straight-running.pcm straight-running.wav
+ffmpeg -f s16le -ar 22050 -ac 1 -i running-fast.pcm running-fast.wav
+ffmpeg -f s16le -ar 22050 -ac 1 -i scream1.pcm scream1.wav
+ffmpeg -f s16le -ar 22050 -ac 1 -i click1.pcm click1.wav
+ffmpeg -f s16le -ar 22050 -ac 1 -i click2.pcm click2.wav
+ffmpeg -f s16le -ar 22050 -ac 1 -i place-item.pcm place-item.wav
+ffmpeg -f s16le -ar 22050 -ac 1 -i scream2.pcm scream2.wav
+ffmpeg -f s16le -ar 22050 -ac 1 -i scream3.pcm scream3.wav
+ffmpeg -f s16le -ar 22050 -ac 1 -i scream4.pcm scream4.wav
+ffmpeg -f s16le -ar 22050 -ac 1 -i scream5.pcm scream5.wav
+ffmpeg -f s16le -ar 22050 -ac 1 -i scream6.pcm scream6.wav
+ffmpeg -f s16le -ar 22050 -ac 1 -i lift2.pcm lift2.wav
+ffmpeg -f s16le -ar 22050 -ac 1 -i kaching.pcm kaching.wav
+ffmpeg -f s16le -ar 22050 -ac 1 -i crash.pcm crash.wav
+ffmpeg -f s16le -ar 22050 -ac 1 -i water1.pcm water1.wav
+ffmpeg -f s16le -ar 22050 -ac 1 -i water2.pcm water2.wav
+ffmpeg -f s16le -ar 22050 -ac 1 -i water3.pcm water3.wav
+ffmpeg -f s16le -ar 22050 -ac 1 -i steam-train-whistle.pcm steam-train-whistle.wav
+ffmpeg -f s16le -ar 22050 -ac 1 -i steam-train-departing.pcm steam-train-departing.wav
+ffmpeg -f s16le -ar 22050 -ac 1 -i splash.pcm splash.wav
+ffmpeg -f s16le -ar 22050 -ac 1 -i go-kart-engine.pcm go-kart-engine.wav
+ffmpeg -f s16le -ar 22050 -ac 1 -i launch1.pcm launch1.wav
+ffmpeg -f s16le -ar 22050 -ac 1 -i launch2.pcm launch2.wav
+ffmpeg -f s16le -ar 22050 -ac 1 -i cough1.pcm cough1.wav
+ffmpeg -f s16le -ar 22050 -ac 1 -i cough2.pcm cough2.wav
+ffmpeg -f s16le -ar 22050 -ac 1 -i cough3.pcm cough3.wav
+ffmpeg -f s16le -ar 22050 -ac 1 -i cough4.pcm cough4.wav
 #This one is in stereo!
-gst-launch filesrc location=rain1.pcm ! audio/x-raw-int, rate=22050, channels=2, endianness=1234, width=16, depth=16, signed=true ! audioconvert ! audio/x-raw-int, rate=22050, channels=2, endianness=1234, width=16, depth=16, signed=true ! wavenc ! filesink location=rain1.wav
-gst-launch filesrc location=thunder1.pcm ! audio/x-raw-int, rate=22050, channels=1, endianness=1234, width=16, depth=16, signed=true ! audioconvert ! audio/x-raw-int, rate=22050, channels=1, endianness=1234, width=16, depth=16, signed=true ! wavenc ! filesink location=thunder1.wav
-gst-launch filesrc location=thunder2.pcm ! audio/x-raw-int, rate=22050, channels=1, endianness=1234, width=16, depth=16, signed=true ! audioconvert ! audio/x-raw-int, rate=22050, channels=1, endianness=1234, width=16, depth=16, signed=true ! wavenc ! filesink location=thunder2.wav
-gst-launch filesrc location=rain2.pcm ! audio/x-raw-int, rate=22050, channels=1, endianness=1234, width=16, depth=16, signed=true ! audioconvert ! audio/x-raw-int, rate=22050, channels=1, endianness=1234, width=16, depth=16, signed=true ! wavenc ! filesink location=rain2.wav
-gst-launch filesrc location=rain3.pcm ! audio/x-raw-int, rate=22050, channels=1, endianness=1234, width=16, depth=16, signed=true ! audioconvert ! audio/x-raw-int, rate=22050, channels=1, endianness=1234, width=16, depth=16, signed=true ! wavenc ! filesink location=rain3.wav
-gst-launch filesrc location=balloon-pop.pcm ! audio/x-raw-int, rate=22050, channels=1, endianness=1234, width=16, depth=16, signed=true ! audioconvert ! audio/x-raw-int, rate=22050, channels=1, endianness=1234, width=16, depth=16, signed=true ! wavenc ! filesink location=balloon-pop.wav
-gst-launch filesrc location=hammer.pcm ! audio/x-raw-int, rate=22050, channels=1, endianness=1234, width=16, depth=16, signed=true ! audioconvert ! audio/x-raw-int, rate=22050, channels=1, endianness=1234, width=16, depth=16, signed=true ! wavenc ! filesink location=hammer.wav
-gst-launch filesrc location=scream7.pcm ! audio/x-raw-int, rate=22050, channels=1, endianness=1234, width=16, depth=16, signed=true ! audioconvert ! audio/x-raw-int, rate=22050, channels=1, endianness=1234, width=16, depth=16, signed=true ! wavenc ! filesink location=scream7.wav
-gst-launch filesrc location=toilet-flush.pcm ! audio/x-raw-int, rate=22050, channels=1, endianness=1234, width=16, depth=16, signed=true ! audioconvert ! audio/x-raw-int, rate=22050, channels=1, endianness=1234, width=16, depth=16, signed=true ! wavenc ! filesink location=toilet-flush.wav
-gst-launch filesrc location=click3.pcm ! audio/x-raw-int, rate=22050, channels=1, endianness=1234, width=16, depth=16, signed=true ! audioconvert ! audio/x-raw-int, rate=22050, channels=1, endianness=1234, width=16, depth=16, signed=true ! wavenc ! filesink location=click3.wav
-gst-launch filesrc location=duck-quack.pcm ! audio/x-raw-int, rate=22050, channels=1, endianness=1234, width=16, depth=16, signed=true ! audioconvert ! audio/x-raw-int, rate=22050, channels=1, endianness=1234, width=16, depth=16, signed=true ! wavenc ! filesink location=duck-quack.wav
-gst-launch filesrc location=message.pcm ! audio/x-raw-int, rate=22050, channels=1, endianness=1234, width=16, depth=16, signed=true ! audioconvert ! audio/x-raw-int, rate=22050, channels=1, endianness=1234, width=16, depth=16, signed=true ! wavenc ! filesink location=message.wav
-gst-launch filesrc location=open-window.pcm ! audio/x-raw-int, rate=22050, channels=1, endianness=1234, width=16, depth=16, signed=true ! audioconvert ! audio/x-raw-int, rate=22050, channels=1, endianness=1234, width=16, depth=16, signed=true ! wavenc ! filesink location=open-window.wav
-gst-launch filesrc location=laugh1.pcm ! audio/x-raw-int, rate=22050, channels=1, endianness=1234, width=16, depth=16, signed=true ! audioconvert ! audio/x-raw-int, rate=22050, channels=1, endianness=1234, width=16, depth=16, signed=true ! wavenc ! filesink location=laugh1.wav
-gst-launch filesrc location=laugh2.pcm ! audio/x-raw-int, rate=22050, channels=1, endianness=1234, width=16, depth=16, signed=true ! audioconvert ! audio/x-raw-int, rate=22050, channels=1, endianness=1234, width=16, depth=16, signed=true ! wavenc ! filesink location=laugh2.wav
-gst-launch filesrc location=laugh3.pcm ! audio/x-raw-int, rate=22050, channels=1, endianness=1234, width=16, depth=16, signed=true ! audioconvert ! audio/x-raw-int, rate=22050, channels=1, endianness=1234, width=16, depth=16, signed=true ! wavenc ! filesink location=laugh3.wav
+ffmpeg -f s16le -ar 22050 -ac 2 -i rain1.pcm rain1.wav
+ffmpeg -f s16le -ar 22050 -ac 1 -i thunder1.pcm thunder1.wav
+ffmpeg -f s16le -ar 22050 -ac 1 -i thunder2.pcm thunder2.wav
+ffmpeg -f s16le -ar 22050 -ac 1 -i rain2.pcm rain2.wav
+ffmpeg -f s16le -ar 22050 -ac 1 -i rain3.pcm rain3.wav
+ffmpeg -f s16le -ar 22050 -ac 1 -i balloon-pop.pcm balloon-pop.wav
+ffmpeg -f s16le -ar 22050 -ac 1 -i hammer.pcm hammer.wav
+ffmpeg -f s16le -ar 22050 -ac 1 -i scream7.pcm scream7.wav
+ffmpeg -f s16le -ar 22050 -ac 1 -i toilet-flush.pcm toilet-flush.wav
+ffmpeg -f s16le -ar 22050 -ac 1 -i click3.pcm click3.wav
+ffmpeg -f s16le -ar 22050 -ac 1 -i duck-quack.pcm duck-quack.wav
+ffmpeg -f s16le -ar 22050 -ac 1 -i message.pcm message.wav
+ffmpeg -f s16le -ar 22050 -ac 1 -i open-window.pcm open-window.wav
+ffmpeg -f s16le -ar 22050 -ac 1 -i laugh1.pcm laugh1.wav
+ffmpeg -f s16le -ar 22050 -ac 1 -i laugh2.pcm laugh2.wav
+ffmpeg -f s16le -ar 22050 -ac 1 -i laugh3.pcm laugh3.wav
 #This one is in stereo!
-gst-launch filesrc location=won-scenario.pcm ! audio/x-raw-int, rate=22050, channels=2, endianness=1234, width=16, depth=16, signed=true ! audioconvert ! audio/x-raw-int, rate=22050, channels=2, endianness=1234, width=16, depth=16, signed=true ! wavenc ! filesink location=won-scenario.wav
-gst-launch filesrc location=haunted-house1.pcm ! audio/x-raw-int, rate=22050, channels=1, endianness=1234, width=16, depth=16, signed=true ! audioconvert ! audio/x-raw-int, rate=22050, channels=1, endianness=1234, width=16, depth=16, signed=true ! wavenc ! filesink location=haunted-house1.wav
-gst-launch filesrc location=haunted-house2.pcm ! audio/x-raw-int, rate=22050, channels=1, endianness=1234, width=16, depth=16, signed=true ! audioconvert ! audio/x-raw-int, rate=22050, channels=1, endianness=1234, width=16, depth=16, signed=true ! wavenc ! filesink location=haunted-house2.wav
-gst-launch filesrc location=cry1.pcm ! audio/x-raw-int, rate=22050, channels=1, endianness=1234, width=16, depth=16, signed=true ! audioconvert ! audio/x-raw-int, rate=22050, channels=1, endianness=1234, width=16, depth=16, signed=true ! wavenc ! filesink location=cry1.wav
-gst-launch filesrc location=brake1.pcm ! audio/x-raw-int, rate=22050, channels=1, endianness=1234, width=16, depth=16, signed=true ! audioconvert ! audio/x-raw-int, rate=22050, channels=1, endianness=1234, width=16, depth=16, signed=true ! wavenc ! filesink location=brake1.wav
-gst-launch filesrc location=brake2.pcm ! audio/x-raw-int, rate=22050, channels=1, endianness=1234, width=16, depth=16, signed=true ! audioconvert ! audio/x-raw-int, rate=22050, channels=1, endianness=1234, width=16, depth=16, signed=true ! wavenc ! filesink location=brake2.wav
-gst-launch filesrc location=error.pcm ! audio/x-raw-int, rate=22050, channels=1, endianness=1234, width=16, depth=16, signed=true ! audioconvert ! audio/x-raw-int, rate=22050, channels=1, endianness=1234, width=16, depth=16, signed=true ! wavenc ! filesink location=error.wav
-gst-launch filesrc location=brake3.pcm ! audio/x-raw-int, rate=22050, channels=1, endianness=1234, width=16, depth=16, signed=true ! audioconvert ! audio/x-raw-int, rate=22050, channels=1, endianness=1234, width=16, depth=16, signed=true ! wavenc ! filesink location=brake3.wav
-gst-launch filesrc location=lift3.pcm ! audio/x-raw-int, rate=22050, channels=1, endianness=1234, width=16, depth=16, signed=true ! audioconvert ! audio/x-raw-int, rate=22050, channels=1, endianness=1234, width=16, depth=16, signed=true ! wavenc ! filesink location=lift3.wav
-gst-launch filesrc location=lift4-woodenrc.pcm ! audio/x-raw-int, rate=22050, channels=1, endianness=1234, width=16, depth=16, signed=true ! audioconvert ! audio/x-raw-int, rate=22050, channels=1, endianness=1234, width=16, depth=16, signed=true ! wavenc ! filesink location=lift4-woodenrc.wav
-gst-launch filesrc location=woodenrc-running.pcm ! audio/x-raw-int, rate=22050, channels=1, endianness=1234, width=16, depth=16, signed=true ! audioconvert ! audio/x-raw-int, rate=22050, channels=1, endianness=1234, width=16, depth=16, signed=true ! wavenc ! filesink location=woodenrc-running.wav
-gst-launch filesrc location=lift5-steelmouse.pcm ! audio/x-raw-int, rate=22050, channels=1, endianness=1234, width=16, depth=16, signed=true ! audioconvert ! audio/x-raw-int, rate=22050, channels=1, endianness=1234, width=16, depth=16, signed=true ! wavenc ! filesink location=lift5-steelmouse.wav
-gst-launch filesrc location=lift6-bm.pcm ! audio/x-raw-int, rate=22050, channels=1, endianness=1234, width=16, depth=16, signed=true ! audioconvert ! audio/x-raw-int, rate=22050, channels=1, endianness=1234, width=16, depth=16, signed=true ! wavenc ! filesink location=lift6-bm.wav
-gst-launch filesrc location=straight-running-bm.pcm ! audio/x-raw-int, rate=22050, channels=1, endianness=1234, width=16, depth=16, signed=true ! audioconvert ! audio/x-raw-int, rate=22050, channels=1, endianness=1234, width=16, depth=16, signed=true ! wavenc ! filesink location=straight-running-bm.wav
-gst-launch filesrc location=cry2.pcm ! audio/x-raw-int, rate=22050, channels=1, endianness=1234, width=16, depth=16, signed=true ! audioconvert ! audio/x-raw-int, rate=22050, channels=1, endianness=1234, width=16, depth=16, signed=true ! wavenc ! filesink location=cry2.wav
-gst-launch filesrc location=tram.pcm ! audio/x-raw-int, rate=22050, channels=1, endianness=1234, width=16, depth=16, signed=true ! audioconvert ! audio/x-raw-int, rate=22050, channels=1, endianness=1234, width=16, depth=16, signed=true ! wavenc ! filesink location=tram.wav
-gst-launch filesrc location=door1.pcm ! audio/x-raw-int, rate=22050, channels=1, endianness=1234, width=16, depth=16, signed=true ! audioconvert ! audio/x-raw-int, rate=22050, channels=1, endianness=1234, width=16, depth=16, signed=true ! wavenc ! filesink location=door1.wav
-gst-launch filesrc location=door2.pcm ! audio/x-raw-int, rate=22050, channels=1, endianness=1234, width=16, depth=16, signed=true ! audioconvert ! audio/x-raw-int, rate=22050, channels=1, endianness=1234, width=16, depth=16, signed=true ! wavenc ! filesink location=door2.wav
-gst-launch filesrc location=door3.pcm ! audio/x-raw-int, rate=22050, channels=1, endianness=1234, width=16, depth=16, signed=true ! audioconvert ! audio/x-raw-int, rate=22050, channels=1, endianness=1234, width=16, depth=16, signed=true ! wavenc ! filesink location=door3.wav
+ffmpeg -f s16le -ar 22050 -ac 2 -i won-scenario.pcm won-scenario.wav
+ffmpeg -f s16le -ar 22050 -ac 1 -i haunted-house1.pcm haunted-house1.wav
+ffmpeg -f s16le -ar 22050 -ac 1 -i haunted-house2.pcm haunted-house2.wav
+ffmpeg -f s16le -ar 22050 -ac 1 -i cry1.pcm cry1.wav
+ffmpeg -f s16le -ar 22050 -ac 1 -i brake1.pcm brake1.wav
+ffmpeg -f s16le -ar 22050 -ac 1 -i brake2.pcm brake2.wav
+ffmpeg -f s16le -ar 22050 -ac 1 -i error.pcm error.wav
+ffmpeg -f s16le -ar 22050 -ac 1 -i brake3.pcm brake3.wav
+ffmpeg -f s16le -ar 22050 -ac 1 -i lift3.pcm lift3.wav
+ffmpeg -f s16le -ar 22050 -ac 1 -i lift4-woodenrc.pcm lift4-woodenrc.wav
+ffmpeg -f s16le -ar 22050 -ac 1 -i woodenrc-running.pcm woodenrc-running.wav
+ffmpeg -f s16le -ar 22050 -ac 1 -i lift5-steelmouse.pcm lift5-steelmouse.wav
+ffmpeg -f s16le -ar 22050 -ac 1 -i lift6-bm.pcm lift6-bm.wav
+ffmpeg -f s16le -ar 22050 -ac 1 -i straight-running-bm.pcm straight-running-bm.wav
+ffmpeg -f s16le -ar 22050 -ac 1 -i cry2.pcm cry2.wav
+ffmpeg -f s16le -ar 22050 -ac 1 -i tram.pcm tram.wav
+ffmpeg -f s16le -ar 22050 -ac 1 -i door1.pcm door1.wav
+ffmpeg -f s16le -ar 22050 -ac 1 -i door2.pcm door2.wav
+ffmpeg -f s16le -ar 22050 -ac 1 -i door3.pcm door3.wav
 
 # Remove temporary files
 rm samples.dat
