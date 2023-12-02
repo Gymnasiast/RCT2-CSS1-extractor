@@ -4,4 +4,4 @@ Put it in the same directory as CSS1.DAT and run it from there.
 
 Needs ffmpeg.
 
-Used information from http://freerct.github.io/RCTTechDepot-Archive/css1dat.html
+Used information from https://tid.rctspace.com/css1dat.html
